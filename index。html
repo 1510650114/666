@@ -6,14 +6,12 @@
 </script>
 <script>
 $(document).ready(function(){
-  
-
-  $("#btn").click(function(){
-    $("img").after("<i>之后</i>");
+  $("#btn1").click(function(){
+    $("img").before("<b>之前</b>");
   });
-	
-	$("#btnl").click(function(){
-    $("i").remove();
+
+  $("#btn2").click(function(){
+    $("b").remove();
   });
 });
 </script>
@@ -22,8 +20,7 @@ $(document).ready(function(){
 <body>
 <img src="/statics/images/logo.png" >
 <br><br>
-
-<button id="btn">之后插入</button>
-	<button id="btnl">清除</button>
+<button id="btn1">之前插入</button>
+<button id="btn2">清空</button>
 </body>
 </html>
