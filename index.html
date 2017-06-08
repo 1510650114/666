@@ -6,24 +6,21 @@
 </script>
 <script>
 $(document).ready(function(){
-  
-
-  $("#btn").click(function(){
-    $("img").after("<i>之后</i>");
+  $("#btn1").click(function(){
+    $("img").before("<b>之前</b>");
   });
-	
-	$("#btnl").click(function(){
-    $("i").remove();
+
+  $("#btn2").click(function(){
+    $("b").remove();
   });
 });
 </script>
 </head>
 
 <body>
-<img src="/http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%9B%BE%E7%89%87&step_word=&ie=utf-8&in=&cl=undefined&lm=undefined&st=undefined&cs=4174197527,3602250184&os=933840479,36995473&simid=&pn=0&rn=1&di=1&ln=1993&fr=&fmq=1496904578899_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=&istype=0&ist=&jit=&bdtype=-1&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcaef76094b36acaf0accebde76d98d1001e99ce7.jpg&rpstart=0&rpnum=0&adpicid=0" >
+<img src="/statics/images/logo.png" >
 <br><br>
-
-<button id="btn">之后插入</button>
-	<button id="btnl">清除</button>
+<button id="btn1">之前插入</button>
+<button id="btn2">清空</button>
 </body>
 </html>
